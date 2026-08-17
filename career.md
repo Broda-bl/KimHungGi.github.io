@@ -36,4 +36,4 @@ Java Backend Developer
 </div>
 
 </article>
-</section>
+
