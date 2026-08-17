@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>WMS 배송 인터페이스 개선 | KHG.dev</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="WMS 배송 인터페이스 개선" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Oracle 기반 배송 스케줄 인터페이스의 데이터 병합, 상태 처리, 오류 분석을 개선한 프로젝트." />
+<meta property="og:description" content="Oracle 기반 배송 스케줄 인터페이스의 데이터 병합, 상태 처리, 오류 분석을 개선한 프로젝트." />
+<link rel="canonical" href="https://kimhunggi.github.io/portfolio/wms-interface/" />
+<meta property="og:url" content="https://kimhunggi.github.io/portfolio/wms-interface/" />
+<meta property="og:site_name" content="KHG.dev" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-08-18T00:58:14+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="WMS 배송 인터페이스 개선" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-08-18T00:58:14+09:00","datePublished":"2026-08-18T00:58:14+09:00","description":"Oracle 기반 배송 스케줄 인터페이스의 데이터 병합, 상태 처리, 오류 분석을 개선한 프로젝트.","headline":"WMS 배송 인터페이스 개선","mainEntityOfPage":{"@type":"WebPage","@id":"https://kimhunggi.github.io/portfolio/wms-interface/"},"url":"https://kimhunggi.github.io/portfolio/wms-interface/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link type="application/atom+xml" rel="alternate" href="https://kimhunggi.github.io/feed.xml" title="KHG.dev" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="/"></a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="/about/">About</a>
+      <a href="/career/">Career</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="테마 변경">◐</button>
+      <button class="menu-btn" id="menu-toggle" aria-label="메뉴 열기">Menu</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <a href="/about/">About</a>
+    <a href="/career/">Career</a>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+  <main><article class="page-shell article-shell">
+  <a class="back-link" href="/portfolio/">← Portfolio</a>
+  <header class="article-header">
+    <p class="eyebrow">Backend / Data</p>
+    <h1>WMS 배송 인터페이스 개선</h1>
+    <p class="lede">Oracle 기반 배송 스케줄 인터페이스의 데이터 병합, 상태 처리, 오류 분석을 개선한 프로젝트.</p>
+    <div class="chip-row">
+      <span class="chip">Java</span><span class="chip">Oracle</span><span class="chip">PL/SQL</span><span class="chip">MERGE</span><span class="chip">SQL</span>
+    </div>
+  </header>
+  <div class="prose"><h2 id="problem">Problem</h2>
+<p>외부 인터페이스 파일의 배송 상태를 기존 데이터와 안정적으로 동기화해야 했습니다.</p>
+
+<h2 id="what-i-did">What I did</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MERGE INTO</code> 기반 UPSERT 쿼리 구성</li>
+  <li>복수 행 서브쿼리, 바인딩 오류 등 운영 장애 분석</li>
+  <li><code class="language-plaintext highlighter-rouge">EXISTS</code>, Window Function을 활용해 중복/상태 로직 정리</li>
+  <li>인터페이스 처리 단위별 오류 추적성 개선</li>
+</ul>
+</div>
+</article>
+</main>
+  <footer class="site-footer">
+  <div>
+    <strong>김형기</strong>
+    <p>Backend engineering, projects and notes.</p>
+  </div>
+  <p>© 2026 김형기 · Built with Jekyll & GitHub Pages</p>
+</footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
