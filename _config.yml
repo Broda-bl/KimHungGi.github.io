@@ -1,9 +1,15 @@
-title: "KimHungGi.dev"
-description: "Java Full-Stack Developer Portfolio & Engineering Blog"
+title: "KHG.dev"
+description: "Java Backend Developer Portfolio & Engineering Blog"
+
 url: "https://KimHungGi.github.io"
 baseurl: ""
-lang: ko-KR
-timezone: Asia/Seoul
+
+name: "김형기"
+role: "Java Backend Developer"
+
+github_username: "KimHungGi"
+
+timezone: "Asia/Seoul"
 
 name: "김형기"
 role: "Java Full-Stack Developer"
