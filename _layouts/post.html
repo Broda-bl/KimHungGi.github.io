@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="page-shell article-shell">
+  <a class="back-link" href="{{ '/blog/' | relative_url }}">← Blog</a>
+  <header class="article-header">
+    <p class="eyebrow">{{ page.category | default: 'Engineering' }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="article-meta">{{ page.date | date: '%Y.%m.%d' }} · {{ page.read_time | default: '5 min read' }}</p>
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

@@ -1,0 +1,7 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<section class="page-hero page-shell"><p class="eyebrow">ENGINEERING BLOG</p><h1>Notes & Writing</h1><p class="lede">개발 중 알게 된 내용, 장애 해결 과정, 공부한 기술을 기록합니다.</p></section>
+<section class="section page-shell"><div class="post-list">{% for post in site.posts %}<a href="{{ post.url | relative_url }}" class="post-row"><time>{{ post.date | date: '%Y.%m.%d' }}</time><div><p class="eyebrow">{{ post.category | default: 'Engineering' }}</p><h3>{{ post.title }}</h3><p>{{ post.excerpt | strip_html | truncate: 150 }}</p></div><span>→</span></a>{% endfor %}</div></section>

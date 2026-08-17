@@ -1,0 +1,47 @@
+title: "KimHungGi.dev"
+description: "Java Full-Stack Developer Portfolio & Engineering Blog"
+url: "https://Broda-bl.github.io"
+baseurl: ""
+lang: ko-KR
+timezone: Asia/Seoul
+
+name: "김형기"
+role: "Java Full-Stack Developer"
+tagline: "서비스의 흐름을 이해하고, 안정적으로 동작하는 백엔드를 만듭니다."
+location: "Seoul, Korea"
+avatar_name: "KimHungGi.dev"
+email: "kimcharlie1002@gmail.com"
+github_username: "Broda-bl"
+linkedin_url: ""
+resume_url: ""
+availability: "Open to work"
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:name/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
